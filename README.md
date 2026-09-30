@@ -1,15 +1,15 @@
 # Birthday Surprise — public template
 
-A reusable birthday webpage with animated teddies, a birthday wish, three surprises, clickable birthday wishes, a note, a make-a-wish celebration, and a separate admin studio.
+A reusable birthday webpage with animated teddies, a birthday wish, three surprises, an automatic memory slideshow, a letter, a gift reveal, and a separate admin studio.
 
 **This is the shareable version.** It contains generic demonstration text, generated teddy artwork, no personal story or memories, no private photos, no passwords, and no original repository history. One deployment supports one birthday page and one configured admin. Anyone can view the birthday page; only the admin can edit it.
 
 ## What is included
 
 - Welcome Yes/No interaction, animated teddy selection, custom welcome image/GIF and photo movement.
-- Birthday celebration, then surprise selection. Open A Little Happiness first to unlock A Note for You, then Make a Wish.
-- Fourteen editable general birthday wishes; tap a star to reveal each message.
-- Editable birthday note; tap the cake to make a wish, then reveal an optional gift.
+- Birthday celebration, then surprise selection. Open Little Moments first to unlock Your letter, then One more surprise.
+- Fourteen generic sample moments in the original image-and-text slideshow. Scenes advance automatically; click the progress lines to jump backward or forward.
+- Editable letter and final surprise, with an optional gift image, message and link. Choose your next surprise returns to the selection screen.
 - Gallery of current uploaded images and built-in teddy artwork.
 - `/admin/login` email/password login; `/admin` content editor.
 - Public page at `/`. No admin link is displayed on the birthday page.
@@ -57,7 +57,17 @@ Restart the development server after changing environment variables.
 | Logout | Sign out button below the admin editor |
 | Password recovery | Reset the admin user's password in Supabase; a recovery-email flow is not included |
 
-Tabs: Birthday details, Welcome screen, Three surprises, Birthday wishes, Gallery, Photos, Personal letter. Text edits require **Save changes**. Uploads save the current edits and image automatically. Gallery lets you reuse an uploaded picture on the welcome screen. Photos are limited to **4 MiB each** to fit Vercel's function request limit.
+Tabs: Birthday details, Welcome screen, Three surprises, Memory chapters, Gallery, Photos, Personal letter. Text edits require **Save changes**. Uploads save the current edits and image automatically. Gallery lets you reuse an uploaded picture on the welcome screen. Photos are limited to **4 MiB each** to fit Vercel's function request limit.
+
+### Replace the sample moments
+
+1. Open `/admin` and select **Memory chapters**.
+2. Pick a scene and edit its title, small heading, caption and closing note.
+3. Upload a photo for that scene. The existing illustration remains until you replace it. Scenes without a sample illustration show the animated teddy.
+4. Click **Save changes** after editing text. Use **Photos** to manage uploaded images and their scene assignments.
+5. In **Three surprises**, change the card titles, letter, final message and optional gift.
+
+These edits are stored in your configured database, not in the GitHub source. Existing saved content takes priority over sample defaults.
 
 Set the admin email before the first save. The saved content records the admin user ID as its owner. If you change to a different admin user later, update the `owner` column in `birthday_content` in the Supabase SQL Editor to that user's UUID too.
 
@@ -96,9 +106,8 @@ Keep personal words/photos in your own database and uploads through admin, rathe
 ## Project map
 
 - `app/surprise.tsx`: public screen flow.
-- `app/general-surprises.tsx`: clickable star wishes and cake/gift reveal.
-- `app/story-player.tsx`: birthday note display.
-- `app/story-data.ts`: fourteen generic birthday wishes.
+- `app/story-player.tsx`: automatic slideshow, letter and final surprise.
+- `app/story-data.ts`: fourteen fictional sample moments.
 - `app/defaults.ts`: generic text and settings.
 - `app/birthday.tsx`, `app/surprises-editor.tsx`, `app/gallery.tsx`: admin UI.
 - `lib/auth.ts`: validates the session with Supabase and checks `ADMIN_EMAIL`.
