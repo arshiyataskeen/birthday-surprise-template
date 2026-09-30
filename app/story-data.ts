@@ -1,114 +1,117 @@
 export const chapters: {id:string;title:string;place:string;caption:string;note:string;icon:string;art?:string}[] = [
   {
     "id": "wish-1",
-    "title": "A day full of smiles",
-    "place": "BIRTHDAY WISH 01",
-    "caption": "May today bring plenty of laughter and reasons to smile.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "Game night giggles",
+    "place": "A FRIENDLY COMPETITION",
+    "caption": "A simple game turned into an afternoon of laughter. Nobody remembers who won, but everyone remembers the fun.",
+    "note": "Some moments deserve a replay.",
+    "icon": "cards",
+    "art": "game-night"
   },
   {
     "id": "wish-2",
-    "title": "Something wonderful awaits",
-    "place": "BIRTHDAY WISH 02",
-    "caption": "Here\u2019s to new experiences and happy surprises in the year ahead.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "A little flower surprise",
+    "place": "A SPLASH OF COLOUR",
+    "caption": "A bunch of bright flowers made an ordinary morning feel like a celebration.",
+    "note": "A small gesture, a big smile.",
+    "icon": "flower",
+    "art": "flowers"
   },
   {
     "id": "wish-3",
-    "title": "Time for yourself",
-    "place": "BIRTHDAY WISH 03",
-    "caption": "Take a moment to enjoy your day, exactly the way you like.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "The cookie experiment",
+    "place": "SOMETHING SWEET",
+    "caption": "Flour on the counter, music in the kitchen, and cookies that disappeared before they cooled.",
+    "note": "The secret ingredient was laughter.",
+    "icon": "cooking",
+    "art": "baking"
   },
   {
     "id": "wish-4",
-    "title": "Celebrate your progress",
-    "place": "BIRTHDAY WISH 04",
-    "caption": "Every little step you have taken deserves a little celebration.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "A picnic in the park",
+    "place": "A SUNNY AFTERNOON",
+    "caption": "A blanket, a basket of snacks, and absolutely no plans. Sometimes that is all a lovely day needs.",
+    "note": "A little sunshine to keep.",
+    "icon": "food"
   },
   {
     "id": "wish-5",
-    "title": "A wish for good company",
-    "place": "BIRTHDAY WISH 05",
-    "caption": "May your day be filled with people who make you feel welcome.",
-    "note": "A little wish, just for you. \u2661",
+    "title": "The bookshop detour",
+    "place": "BETWEEN THE SHELVES",
+    "caption": "One quick visit became an hour of discovering books and sharing favourite lines.",
+    "note": "A new chapter waiting to happen.",
     "icon": "magic"
   },
   {
     "id": "wish-6",
-    "title": "Your favourite things",
-    "place": "BIRTHDAY WISH 06",
-    "caption": "Good food, great music, and the things that make you happy.",
-    "note": "A little wish, just for you. \u2661",
+    "title": "A playlist for the day",
+    "place": "TURN THE MUSIC UP",
+    "caption": "Every song brought another smile. Even the off-key singing became part of the fun.",
+    "note": "Good music, better company.",
     "icon": "magic"
   },
   {
     "id": "wish-7",
-    "title": "A fresh beginning",
-    "place": "BIRTHDAY WISH 07",
-    "caption": "A new birthday is another chance to try something you have been dreaming of.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "A tiny creative mess",
+    "place": "COLOURS EVERYWHERE",
+    "caption": "Paint, paper, and a very ambitious idea. The result was imperfect and completely wonderful.",
+    "note": "Made with a happy heart.",
+    "icon": "photo"
   },
   {
     "id": "wish-8",
-    "title": "Little joys everywhere",
-    "place": "BIRTHDAY WISH 08",
-    "caption": "May ordinary days bring unexpected moments of happiness.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "An ice-cream afternoon",
+    "place": "ONE EXTRA SCOOP",
+    "caption": "Choosing a flavour was the hardest decision of the day. Sprinkles made everything better.",
+    "note": "Sweet little moments.",
+    "icon": "food"
   },
   {
     "id": "wish-9",
-    "title": "Keep being curious",
-    "place": "BIRTHDAY WISH 09",
-    "caption": "There are so many wonderful things left to discover.",
-    "note": "A little wish, just for you. \u2661",
+    "title": "Cloud watching",
+    "place": "A QUIET LITTLE BREAK",
+    "caption": "For a while, the only task was finding shapes in the clouds and enjoying the breeze.",
+    "note": "Slow days have their own magic.",
     "icon": "magic"
   },
   {
     "id": "wish-10",
-    "title": "Room for adventure",
-    "place": "BIRTHDAY WISH 10",
-    "caption": "Here\u2019s to new places, new ideas, and stories still to come.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "The puzzle challenge",
+    "place": "ONE PIECE AT A TIME",
+    "caption": "The missing piece was under the table all along. Finding it felt like a tiny victory.",
+    "note": "Worth celebrating together.",
+    "icon": "cards"
   },
   {
     "id": "wish-11",
-    "title": "A little peace",
-    "place": "BIRTHDAY WISH 11",
-    "caption": "Wishing you calm moments and time to recharge.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "A garden discovery",
+    "place": "SOMETHING NEW TO NOTICE",
+    "caption": "A colourful butterfly and a winding path made a familiar place feel brand new.",
+    "note": "Wonder is often nearby.",
+    "icon": "flower"
   },
   {
     "id": "wish-12",
-    "title": "Celebrate being you",
-    "place": "BIRTHDAY WISH 12",
-    "caption": "Today is a lovely reason to celebrate everything that makes you unique.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "Movie night favourites",
+    "place": "PASS THE POPCORN",
+    "caption": "Comfy cushions, a familiar film, and plenty of snacks made the perfect evening.",
+    "note": "The best seat is a cosy one.",
+    "icon": "family"
   },
   {
     "id": "wish-13",
-    "title": "Dream a little bigger",
-    "place": "BIRTHDAY WISH 13",
-    "caption": "May this year bring you closer to something that matters to you.",
-    "note": "A little wish, just for you. \u2661",
-    "icon": "magic"
+    "title": "A homemade card",
+    "place": "A LITTLE SOMETHING HANDMADE",
+    "caption": "A few kind words and a drawing made this small card feel like a very special gift.",
+    "note": "Keep the little things.",
+    "icon": "gift"
   },
   {
     "id": "wish-14",
-    "title": "Happy birthday!",
-    "place": "BIRTHDAY WISH 14",
-    "caption": "Wishing you a bright, joyful year and a birthday to remember.",
-    "note": "A little wish, just for you. \u2661",
+    "title": "More moments ahead",
+    "place": "TO BE CONTINUED",
+    "caption": "There are still so many little adventures to enjoy. Here is to collecting more reasons to smile.",
+    "note": "Happy birthday — let the next chapter begin.",
     "icon": "magic"
   }
 ];
